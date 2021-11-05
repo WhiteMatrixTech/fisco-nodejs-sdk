@@ -1,0 +1,27 @@
+{
+    "encryptType": "ECDSA",
+    "accounts": {
+        "testuser": {
+            "type": "pem",
+            "value": "/tmp/fisco-baas-var/testnet5/user.pem"
+        }
+    },
+    "nodes": [
+        {
+            "ip": "39.101.177.195",
+            "port": "27001"
+        },
+        {
+            "ip": "8.142.50.225",
+            "port": "27004"
+        }
+    ],
+    "authentication": {
+        "key": "/tmp/fisco-baas-var/testnet5/nodes/39.101.177.195/sdk/sdk.key",
+        "cert": "/tmp/fisco-baas-var/testnet5/nodes/39.101.177.195/sdk/sdk.crt",
+        "ca": "/tmp/fisco-baas-var/testnet5/nodes/39.101.177.195/sdk/ca.crt"
+    },
+    "groupID": 1,
+    "chainID": 1,
+    "timeout": 10000
+}
