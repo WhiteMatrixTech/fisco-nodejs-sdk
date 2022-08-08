@@ -382,6 +382,7 @@ function channelPromise(data, type, node, authentication, timeout = null) {
                 if (result.error) {
                     reject(result);
                 } else {
+                    result.node = socketID;
                     resolve(result);
                 }
                 return; // This `return` is not necessary, but it may can avoid future trap
